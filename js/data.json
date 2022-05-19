@@ -1,0 +1,38 @@
+   [
+	{
+		"name": "Boom Slasher 2000",
+		"tag": "boom",
+		"price": 129.99,
+		"inCart": 0
+	},
+	{
+		"name": "RazorBack",
+		"tag": "razor",
+		"price": 99.99,
+		"inCart": 0
+	},
+	{
+		"name": "AS",
+		"tag": "as",
+		"price": 89.99,
+		"inCart": 0
+	},
+	{
+		"name": "Plain Puma",
+		"tag": "plain",
+		"price": 69.99,
+		"inCart": 0
+	},
+	{
+		"name": "GM",
+		"tag": "gm",
+		"price": 199.99,
+		"inCart": 0
+	},
+	{
+		"name": "Adidas",
+		"tag": "adidas",
+		"price": 169.99,
+		"inCart": 0
+	}
+]
