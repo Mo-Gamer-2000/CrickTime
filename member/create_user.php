@@ -6,8 +6,7 @@ if (
     isset($_POST['name']) && isset($_POST['email'])
     && isset($_POST['password'])
 ) {
-    $sql = "INSERT INTO members (name, email, password) 
-              VALUES (:name, :email, :password)";
+    $sql = "INSERT INTO members (name, email, password) VALUES (:name, :email, :password)";
     echo ("<pre>\n" . $sql . "\n</pre>\n");
     $stmt = $pdo->prepare($sql);
     $stmt->execute(array(
@@ -15,6 +14,8 @@ if (
         ':email' => $_POST['email'],
         ':password' => $_POST['password']
     ));
+    $msg = "Image uploaded successfully";
+    header('Location: login.php');
 }
 
 if (isset($_POST['delete']) && isset($_POST['id'])) {
