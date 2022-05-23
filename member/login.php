@@ -5,16 +5,12 @@ if (
 	isset($_POST['email'])
 	&& isset($_POST['password'])
 ) {
-
 	//this way is vulnerable replace like below
-
 
 	//get the typed email and password
 
 	$typed_email = $_POST['email'];
 	$typed_password = $_POST['password'];
-
-
 
 	$sql = "SELECT * FROM members WHERE email = '$typed_email' AND password= '$typed_password'";
 
@@ -23,9 +19,6 @@ if (
 	$stmt = $pdo->query($sql);
 	$user = $stmt->fetch(PDO::FETCH_ASSOC);
 	//print_r($rows);
-
-
-
 
 	// this uses prepared statements so is not vulnerable to injection
 	$sql = "SELECT * FROM members WHERE email = :email AND password=:password";
