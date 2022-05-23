@@ -69,6 +69,7 @@ $result = mysqli_query($Database, "SELECT * FROM images");
 
      <main id="maincontent">
           <h1>Latest Arrivals:</h1>
+          <br>
           <p>Here we have recently added items by the members of CrickTime.</p>
           <div class="outline">
                <?php
